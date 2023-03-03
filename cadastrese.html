@@ -22,13 +22,13 @@
 <body>
 
 
-    <div class="container">
-        <!--Topo do Site-->
+    <div class="container"> <!--Container - vai guardar todos os componentes-->
+        <!--Componente Top do Site-->
         <div class="row">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                         <img src="img/senai-logo-1.png" width="200" alt="Bootstrap">
+                        <img src="img/senai-logo-1.png" width="200" alt="Bootstrap">
                         <ul id="menu-superior">
                             <li><a href="cadastrese.html">cadastre-se</a></li>
                             <li><a href="login.html">login</a></li>
@@ -38,9 +38,23 @@
             </nav>
         </div>
 
-       
-        <!-- Conteúdo -->
-        <div class="row">
+        <!--Encerramento do Topo do Site encerra uma linha.-->
+
+        <!--Linha Horizontal de Aplicativos-->
+        <div class="row text-center" style="margin-top: 10px;background-color:#517AFC;color:#fefefe">
+            <div class="col">
+                LearnCode Swing <img src="img/coffeecuplogoJava_5406.png" width="25">
+            </div>
+            <div class="col">
+                LearnCode Web <img src="img/java_script_icon_244958.png" width="25">
+            </div>
+            <div class="col">
+                LearnCode Spring <img src="img/2998123-ecology-green-leaf-plant-spring_99865.png" width="25">
+            </div>
+        </div>
+
+        <!--Fim da linha horizontal de aplicativos-->
+        <div class="row" style="margin-top: 10px; ">
             <!-- Menu Lateral -->
             <div class="col-md-2" id="menu-lateral">
                 <ul class="nav flex-column">
@@ -52,16 +66,38 @@
                     </li>
                 </ul>
             </div>
-            <!--Área Principal da pag-->
-            <div>
+            <!--Formulário de Cadastre-se-->
+            <div class="col-md-6">
                 <h6>Cadastre-se</h6>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="login">Login:</label>
+                        <input type="text" class="form-control" id="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirma-senha">Confirma Senha:</label>
+                        <input type="password" class="form-control" id="confirma-senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
-            
         </div> <!--fim da segunda linha-->
         <div class="row">
 
         </div>
-    </div>
+    </div> <!--Fechamento do Container-->
     <!-- Link para o jQuery e o Bootstrap JS -->
 
 
@@ -70,8 +106,11 @@
 
 
 
+    
 
 
+    <!--inserirUsuario-->
+    <script src="js/inserirUsuario.js"></script>
 
 
     <!--Inserindo arquivo boostrap js-->

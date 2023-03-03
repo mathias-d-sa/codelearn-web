@@ -1,33 +1,33 @@
 body{
-    background-color: blanchedalmond;
+   background-color: blanchedalmond;
 }
 
 #menu-superior li a{
-   text-decoration: none;
+  text-decoration: none;
 }
 #menu-superior li{
-   display: inline;
-   padding-left: 20px;
+  display: inline;
+  padding-left: 20px;
 }
 
 #btnLogar{
-   margin-top:20px;
-   width: 480px;
+  margin-top:20px;
+  width: 480px;
 }
 
 
 #senha{
-   
-   margin-top:10px;
+  
+  margin-top:10px;
 
 }
 
 #menu-lateral{
-   background: rgb(254,254,254);
-   background: linear-gradient(9deg, rgba(254,254,254,1) 0%, rgba(0,92,170,1) 100%, rgba(254,254,254,1) 100%); 
-   height:700px;
+  background: rgb(254,254,254);
+  background: linear-gradient(9deg, rgba(254,254,254,1) 0%, rgba(0,92,170,1) 100%, rgba(254,254,254,1) 100%); 
+  height:700px;
 }
 #menu-lateral ul li a{
-   text-decoration: none;
-   color:#fefefe;
+  text-decoration: none;
+  color:#fefefe;
 }
