@@ -22,9 +22,13 @@ formulario.addEventListener('submit', (e) => { //tratamento de evento (submit)
     senha: senha.value //senha
   };
 
-  //localStorage 
+  /*Fim da aquisição dos dados.
+  
+  */
 
-  localStorage.setItem('usuario', JSON.stringify(usuario));
+  //localStorage 
+  sessionStorage.setItem('usuario', JSON.stringify(usuario));
+  //localStorage.setItem('usuario', JSON.stringify(usuario));
 
   alert('Cadastro realizado com sucesso!');
 }); //esse parâteses representa o fim do ouvinte (evento)

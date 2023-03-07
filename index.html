@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rômulo Cesar Silvestre Leite">
+    <meta name="author" content="Mathias de Sá">
     <meta name="description" content="sistema web de aprendizagem industrial">
     <meta name="generator" content="Visual Studio Code 1.75.1">
     <meta name="keywords" content="Java, C#, Ensino Industrial">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
 
     <title>CodeLearn V.1.0.0</title>
 </head>
@@ -24,11 +23,11 @@
 
     <div class="container">
         <!--Topo do Site-->
-        <div class="row">
+        <div class="row" id="divTitulo">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                         <img src="img/senai-logo-1.png" width="200" alt="Bootstrap"> 
+                        <img src="img/senai-logo-1.png" width="200" alt="Bootstrap">
                         <ul id="menu-superior">
                             <li><a href="cadastrese.html">cadastre-se</a></li>
                             <li><a href="login.html">login</a></li>
@@ -38,28 +37,33 @@
             </nav>
         </div>
 
-       
-        <!-- Conteúdo -->
         <div class="row">
             <!-- Menu Lateral -->
-            <div class="col-md-2" id="menu-lateral">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Quem Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Links Úteis</a>
-                    </li>
-                </ul>
+            <div class="col-md-3 border border_start-0 border_bottom-0 border-2" id="menu-lateral"><br>
+
+                <div>
+
+                    <a class="nav-link active" href="#">Selecione a Unidade Senai</a>
+
+                    <form>
+                        <input type="radio" name="unidade" id="rbBrasilia"> Brasilia <br>
+                        <input type="radio" name="unidade" id="rbGama"> Gama <br>
+                        <input type="radio" name="unidade" id="rbSobradinho"> Sobradinho <br>
+                        <input type="radio" name="unidade" id="rbTaguatinga"> Taguatinga<br>
+                    </form>
+                </div>
+
+                <div>
+                    <img src="" alt="" id="unidade" class="d-none">
+                </div>
+
             </div>
             <!--Área Principal da Página-->
             <div>
-                  <h6>Página em Manutenção</h6>
+
             </div>
         </div> <!--fim da segunda linha-->
-        <div class="row">
 
-        </div>
     </div>
     <!-- Link para o jQuery e o Bootstrap JS -->
 
@@ -69,7 +73,7 @@
 
 
 
-
+    <script src="js/desafio.js"></script>
 
 
 
@@ -81,143 +85,3 @@
 </body>
 
 </html>
-
-
-<!--
-           Projeto Final - Java Full Stack
-           =>COMPETÊNCIA 01- Entender o conceito de HTML
-            
-           HTML - Hypertext Markup Language
-           Linguagem de Marcação de Hipertexto
-           *Não é uma linguagem de programação
-           *Tim Berners-Lee
-             ->World Wide Web Consortium -W3C
-                =Padronização Web --W3C
-                https://www.w3c.br/
-
-            *A página (documento) HTML interage com CSS e JavaScript
-            HTML = estrutura
-            CSS = estilização
-            JavaScript = funcionalidade
-       -->
-
-<!--
-          =>COMPETÊNCIA 02- Diferenciar o HTML 5 comparado com o HTML 4.01
-          Definindo o tipo de HTML = Versão 5
-          <!DOCTYPE html>
-          
-          Compare agora com o da versão: 4.01
-           <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-          
-          A versão 5 trouxe novas tags: recursos para validar, multimidia.
-          O problema que o professor enfrentou no inicio foi compatibilidade.
-          
-          A interface do site: Flash (animações, botões, recursos)
-          WebDesigner-> ele pegava o flash e embutia dentro do HTML 5
-          O empreendedorismo aumentou
-          Todo mundo, queria fazer um site.
-          O site demorava. (flash) - audio e vídeo e animação.
-
-          HTML 5 
-            Novidades:
-                 *Novas tags: audio e vídeo
-                 *HTML 5 Canvas: animação
-          Nem todos navegadores aceitavam o HTML 5 em sua totalidade:
-             *Na época a equipe da Microsoft sugeriu essa ferramenta:
-                https://html5test.com/
-
-       -->
-
-<!--
-         =>COMPETÊNCIA 02- Definir Tag.
-         tag sem par
-         <  > 
-         
-         tag com par
-         <  >
-
-         </ >
-
-         <!DOCTYPE html> - tag sem par
-         
-         tag com par
-         <body>
-
-         </body>
-
-         tag para inserir uma imagem
-         
-         <img src="img/logo.png" alt="logo de cor azul com o nome senai em caixa alta"> 
-         
-         dentro da tag temos atributos
-              src 
-              alt
-           
-         Vamos usar outro atributo width
-         <img src="img/senai-logo-1.png" width="200"  alt="logo de cor azul com o nome senai em caixa alta">
-
-       -->
-
-<!--
-
-       =>COMPETÊNCIA 03- Entender toda a estrutura base do documento html
-
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-             <meta charset="UTF-8">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <title>Coloque o título aqui</title>
-        </head>
-        <body>
-           Programe aqui        
-        </body>
-        </html>
-
-       -->
-
-<!--
-        =>COMPETÊNCIA 04- Entender a utilização essencial da tag meta
-        author: quem é autor
-        
-        Outros atributos da tag meta:
-
-         <meta name="author" content="Rômulo Cesar Silvestre Leite">
-         <meta name="description" content="sistema web de aprendizagem industrial">
-         <meta name="generator" content="Visual Studio Code 1.75.1">
-         <meta name="keywords" content="Java, C#, Ensino Industrial">
-
-       -->
-
-<!--
-         =>COMPETÊNCIA 05- Entender a tab <body>  </body>
-
-         Ela é o corpo do site ou sistema web ou documento ou aplicativo ou página web
-         
-         <body bgcolor="green"> - não recomendado
-
-         O recomendado é a utilização de css
-
-         body{
-           background-color: blanchedalmond;
-         }
-         A versão do CSS é a versão 3
-           Vantagens:
-              *Gradiente
-              *Animação
-
-       -->
-
-<!--
-          =>COMPETÊNCIA 06- Criar as divisões no site
-          <div>
-
-          </div>
-
-          Boostrap
-
-
-
-
-       -->
