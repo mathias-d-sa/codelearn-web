@@ -14,9 +14,16 @@ body {
 }
 
 #btnLogar {
-  margin-top: 20px;
-  width: 480px;
+  margin-top: 25px;
+  width: 410px;
+  transition: 0.4s;
+
 }
+
+/*#btnLogar [type="submit"]:hover {
+  background-color: #fff;
+  color: #0075ff;
+}*/
 
 
 #senha {
